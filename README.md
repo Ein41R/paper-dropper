@@ -135,6 +135,17 @@ menu:
 	item-material: DIAMOND
 ```
 
+Maps can choose a different selector item by setting `item-material` inside the map:
+
+```yaml
+maps:
+	canyon:
+		display-name: "Canyon Drop"
+		item-material: DIAMOND
+```
+
+Maps without this setting use `menu.item-material` as the fallback.
+
 The Nether Star and Compass have an enchantment glint automatically. The enchantment is hidden, so it is only used for the visual effect.
 
 Completion pauses for three seconds by default, showing the finish title before teleporting. The delay and both title screens can be changed under `completion` in `config.yml`.

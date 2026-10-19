@@ -91,6 +91,7 @@ public final class DeathDropPlugin extends JavaPlugin implements Listener, Comma
                     maps.put(id.toLowerCase(), new MapInfo(
                             id.toLowerCase(),
                             section.getString("display-name", id),
+                            menuItemMaterial(section.getString("item-material")),
                             checkpoint,
                             finish,
                             FinishType.from(section.getString("finish.type", "BOTH"))));
@@ -197,8 +198,11 @@ public final class DeathDropPlugin extends JavaPlugin implements Listener, Comma
         return ChatColor.translateAlternateColorCodes('&', text);
     }
 
-    private Material menuItemMaterial() {
-        Material material = Material.matchMaterial(getConfig().getString("menu.item-material", "PAPER"));
+    private Material menuItemMaterial(String configuredMaterial) {
+        String materialName = configuredMaterial != null
+                ? configuredMaterial
+                : getConfig().getString("menu.item-material", "PAPER");
+        Material material = Material.matchMaterial(materialName);
         return material == null || !material.isItem() ? Material.PAPER : material;
     }
 
@@ -260,7 +264,7 @@ public final class DeathDropPlugin extends JavaPlugin implements Listener, Comma
         holder.inventory = inventory;
         for (int index = 0; index < available.size() && index < size; index++) {
             MapInfo map = available.get(index);
-            ItemStack icon = new ItemStack(menuItemMaterial());
+            ItemStack icon = new ItemStack(map.itemMaterial);
             ItemMeta meta = icon.getItemMeta();
             String itemName = getConfig().getString("menu.item-name", "&6&l%map%");
             String itemLore = getConfig().getString("menu.item-lore", "&7Click to enter this map.");
@@ -575,13 +579,16 @@ public final class DeathDropPlugin extends JavaPlugin implements Listener, Comma
     private static final class MapInfo {
         private final String id;
         private final String displayName;
+        private final Material itemMaterial;
         private final Location checkpoint;
         private final Location finishLocation;
         private final FinishType finishType;
 
-        private MapInfo(String id, String displayName, Location checkpoint, Location finishLocation, FinishType finishType) {
+        private MapInfo(String id, String displayName, Material itemMaterial, Location checkpoint,
+                Location finishLocation, FinishType finishType) {
             this.id = id;
             this.displayName = displayName;
+            this.itemMaterial = itemMaterial;
             this.checkpoint = checkpoint;
             this.finishLocation = finishLocation;
             this.finishType = finishType;

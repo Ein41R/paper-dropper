@@ -10,12 +10,17 @@ items:
   compass-name: "&a&lCheckpoint Compass"
   compass-lore: "&7Right-click to return to your last checkpoint."
 
-# The item shown for each map in the selector GUI.
+# The fallback item shown for maps without their own item-material.
 # Examples: PAPER, DIAMOND, NETHER_STAR, FEATHER, FIREWORK_STAR
 menu:
   item-material: PAPER
   item-name: "&6&l%map%"
   item-lore: "&7Click to enter this map."
+
+# Each map can override menu.item-material with its own item-material:
+# maps:
+#   canyon:
+#     item-material: DIAMOND
 
 # Completion presentation. The teleport delay is measured in seconds.
 completion:
