@@ -448,7 +448,7 @@ public final class DeathDropPlugin extends JavaPlugin implements Listener, Comma
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (args.length == 0) {
-            sender.sendMessage(ChatColor.YELLOW + "/dd create|delete|setcheckpoint|setfinish|sethomingroom|list|reload|give");
+            sender.sendMessage(ChatColor.YELLOW + "/dd create|delete|setcheckpoint|setfinish|setitem|sethomingroom|list|reload|give");
             return true;
         }
         String subcommand = args[0].toLowerCase();
@@ -470,6 +470,27 @@ public final class DeathDropPlugin extends JavaPlugin implements Listener, Comma
             }
             giveItems(target);
             sender.sendMessage(ChatColor.GREEN + "Items given to " + target.getName() + ".");
+            return true;
+        }
+        if (subcommand.equals("setitem")) {
+            if (args.length < 3) {
+                sender.sendMessage(ChatColor.RED + "Usage: /dd setitem <map> <material>");
+                return true;
+            }
+            String mapId = args[1].toLowerCase();
+            if (!maps.containsKey(mapId)) {
+                sender.sendMessage(ChatColor.RED + "Unknown map: " + mapId);
+                return true;
+            }
+            Material material = Material.matchMaterial(args[2]);
+            if (material == null || !material.isItem()) {
+                sender.sendMessage(ChatColor.RED + "Invalid item material: " + args[2]);
+                return true;
+            }
+            getConfig().set("maps." + mapId + ".item-material", material.name());
+            savePluginConfig();
+            loadData();
+            sender.sendMessage(ChatColor.GREEN + "Set " + mapId + " selector item to " + material.name() + ".");
             return true;
         }
         if (subcommand.equals("finish") && args.length >= 2) {
@@ -545,22 +566,32 @@ public final class DeathDropPlugin extends JavaPlugin implements Listener, Comma
             player.sendMessage(ChatColor.GREEN + "Homing room set.");
             return true;
         }
-        player.sendMessage(ChatColor.RED + "Usage: /dd create <id> [display-name], /dd setcheckpoint <id>, /dd setfinish <id> [pressure|sign|both], /dd sethomingroom, /dd list, /dd reload, /dd give [player]");
+        player.sendMessage(ChatColor.RED + "Usage: /dd create <id> [display-name], /dd setcheckpoint <id>, /dd setfinish <id> [pressure|sign|both], /dd setitem <map> <material>, /dd sethomingroom, /dd list, /dd reload, /dd give [player]");
         return true;
     }
 
     @Override
     public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
         if (args.length == 1) {
-            return partial(args[0], List.of("create", "delete", "setcheckpoint", "setfinish", "sethomingroom", "finish", "list", "reload", "give"));
+            return partial(args[0], List.of("create", "delete", "setcheckpoint", "setfinish", "setitem", "sethomingroom", "finish", "list", "reload", "give"));
         }
-        if (args.length == 2 && List.of("delete", "setcheckpoint", "setfinish").contains(args[0].toLowerCase())) {
+        if (args.length == 2 && List.of("delete", "setcheckpoint", "setfinish", "setitem").contains(args[0].toLowerCase())) {
             return partial(args[1], new ArrayList<>(maps.keySet()));
         }
         if (args.length == 3 && args[0].equalsIgnoreCase("setfinish")) {
             return partial(args[2], List.of("pressure", "sign", "both"));
         }
+        if (args.length == 3 && args[0].equalsIgnoreCase("setitem")) {
+            return partial(args[2], itemMaterials());
+        }
         return Collections.emptyList();
+    }
+
+    private List<String> itemMaterials() {
+        return java.util.Arrays.stream(Material.values())
+                .filter(Material::isItem)
+                .map(Material::name)
+                .toList();
     }
 
     private List<String> partial(String input, List<String> values) {

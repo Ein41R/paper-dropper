@@ -14,14 +14,15 @@ items:
 # Examples: PAPER, DIAMOND, NETHER_STAR, FEATHER, FIREWORK_STAR
 menu:
   sports:
-    item-material: DIAMOND
-  Aerostat:
-    item-material: FEATHER
+    item-material: RED_WOOL
+  aerostat:
+    item-material: BLUE_WOOL
   item-material: PAPER
   item-name: "&6&l%map%"
   item-lore: "&7Click to enter this map."
 
-# Each map can override menu.item-material with its own item-material:
+# Each map can override menu.item-material with its own item-material.
+# Put this under maps.<map-id>, not under menu:
 # maps:
 #   canyon:
 #     item-material: DIAMOND

@@ -1,42 +1,41 @@
-[21:05:13] [ServerMain/INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.4.1+1-1-24.04.4-Ubuntu; Ubuntu null) on Linux 7.0.0-38-generic (amd64)
-[21:05:13] [ServerMain/INFO]: [bootstrap] Loading Paper 26.3-205-main@a90108f (2026-10-17T20:50:27Z) for Minecraft 26.3
-[21:05:13] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
-[21:05:13] [ServerMain/INFO]: [PluginInitializerManager] Initialized 1 plugin
-[21:05:13] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+[21:11:49] [ServerMain/INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.4.1+1-1-24.04.4-Ubuntu; Ubuntu null) on Linux 7.0.0-38-generic (amd64)
+[21:11:49] [ServerMain/INFO]: [bootstrap] Loading Paper 26.3-205-main@a90108f (2026-10-17T20:50:27Z) for Minecraft 26.3
+[21:11:49] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[21:11:49] [ServerMain/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[21:11:49] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (1):
  - DeathDrop (1.0.0)
-[21:05:16] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
-[21:05:16] [ServerMain/INFO]: [com.destroystokyo.paper.profile.PaperServicesDiscoveryService] Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
-[21:05:16] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 309.2ms
-[21:05:17] [Worker-Main-4/INFO]: Loaded 1866 advancements
-[21:05:17] [Server thread/INFO]: Starting minecraft server version 26.3
-[21:05:17] [Server thread/INFO]: Loading properties
-[21:05:17] [Server thread/INFO]: This server is running Paper version 26.3-205-main@a90108f (2026-10-17T20:50:27Z) (Implementing API version 26.3.build.205-stable)
-[21:05:17] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
-[21:05:17] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[21:05:17] [Server thread/INFO]: Using 4 threads for Netty based IO
-[21:05:17] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
-[21:05:17] [Server thread/INFO]: Default game type: SURVIVAL
-[21:05:17] [Server thread/INFO]: Generating keypair
-[21:05:17] [Server thread/INFO]: Starting Minecraft server on *:25565
-[21:05:17] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[21:05:17] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
-[21:05:18] [Server thread/INFO]: [DeathDrop] Loading server plugin DeathDrop v1.0.0
-[21:05:18] [Server thread/INFO]: Preparing level "world"
-[21:05:18] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:overworld'...
-[21:05:18] [Server thread/INFO]: Preparing spawn area: 100%
-[21:05:18] [Server thread/INFO]: Prepared spawn area in 1 ms
-[21:05:18] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_nether'...
-[21:05:18] [Server thread/INFO]: Prepared spawn area in 1 ms
-[21:05:18] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_end'...
-[21:05:18] [Server thread/INFO]: Prepared spawn area in 0 ms
-[21:05:18] [Server thread/INFO]: Done preparing level "world" (0.198s)
-[21:05:18] [Server thread/INFO]: [DeathDrop] Enabling DeathDrop v1.0.0
-[21:05:18] [Server thread/INFO]: [DeathDrop] DeathDrop enabled with 8 map(s).
-[21:05:18] [Server thread/INFO]: [spark] Starting background profiler...
-[21:05:18] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[21:05:18] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[21:05:19] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[21:05:19] [Server thread/INFO]: Running delayed init tasks
-[21:05:19] [Server thread/INFO]: Done (6.335s)! For help, type "help"
-[21:05:19] [Paper Async Task Handler Thread - 1/INFO]: *** Currently you are 1 build behind ***
-[21:05:19] [Paper Async Task Handler Thread - 1/INFO]: *** It is highly recommended to download the latest build from https://papermc.io/downloads/paper ***
+[21:11:52] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[21:11:52] [ServerMain/INFO]: [com.destroystokyo.paper.profile.PaperServicesDiscoveryService] Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[21:11:52] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 310.9ms
+[21:11:53] [Worker-Main-4/INFO]: Loaded 1866 advancements
+[21:11:53] [Server thread/INFO]: Starting minecraft server version 26.3
+[21:11:53] [Server thread/INFO]: Loading properties
+[21:11:53] [Server thread/INFO]: This server is running Paper version 26.3-205-main@a90108f (2026-10-17T20:50:27Z) (Implementing API version 26.3.build.205-stable)
+[21:11:53] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[21:11:53] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[21:11:53] [Server thread/INFO]: Using 4 threads for Netty based IO
+[21:11:53] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
+[21:11:54] [Server thread/INFO]: Default game type: SURVIVAL
+[21:11:54] [Server thread/INFO]: Generating keypair
+[21:11:54] [Server thread/INFO]: Starting Minecraft server on *:25565
+[21:11:54] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[21:11:54] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[21:11:54] [Server thread/INFO]: [DeathDrop] Loading server plugin DeathDrop v1.0.0
+[21:11:54] [Server thread/INFO]: Preparing level "world"
+[21:11:54] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:overworld'...
+[21:11:54] [Server thread/INFO]: Prepared spawn area in 0 ms
+[21:11:54] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_nether'...
+[21:11:54] [Server thread/INFO]: Prepared spawn area in 0 ms
+[21:11:54] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_end'...
+[21:11:54] [Server thread/INFO]: Prepared spawn area in 0 ms
+[21:11:54] [Server thread/INFO]: Done preparing level "world" (0.193s)
+[21:11:54] [Server thread/INFO]: [DeathDrop] Enabling DeathDrop v1.0.0
+[21:11:54] [Server thread/INFO]: [DeathDrop] DeathDrop enabled with 8 map(s).
+[21:11:54] [Server thread/INFO]: [spark] Starting background profiler...
+[21:11:54] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[21:11:55] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[21:11:55] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[21:11:55] [Server thread/INFO]: Running delayed init tasks
+[21:11:55] [Server thread/INFO]: Done (6.742s)! For help, type "help"
+[21:11:55] [Paper Async Task Handler Thread - 1/INFO]: *** Currently you are 1 build behind ***
+[21:11:55] [Paper Async Task Handler Thread - 1/INFO]: *** It is highly recommended to download the latest build from https://papermc.io/downloads/paper ***

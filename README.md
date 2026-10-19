@@ -117,9 +117,12 @@ Useful commands:
 ```text
 /dd list
 /dd delete <map>
+/dd setitem <map> <material>
 /dd give [player]
 /dd reload
 ```
+
+Use `/dd setitem sports DIAMOND` to choose the item shown for a map in the selector. The command saves to the live plugin configuration and reloads the map data immediately. Materials must be item materials, such as `PAPER`, `DIAMOND`, `FEATHER`, or `NETHER_STAR`.
 
 Map definitions are stored in `plugins/DeathDrop/config.yml`. Player session data is stored in `plugins/DeathDrop/players.yml`.
 

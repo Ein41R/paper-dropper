@@ -7,7 +7,7 @@ description: Map selection, checkpoint respawns, and death-drop progression.
 commands:
   dd:
     description: Manage DeathDrop maps and items.
-    usage: /dd <create|delete|setcheckpoint|setfinish|sethomingroom|finish|list|reload|give>
+    usage: /dd <create|delete|setcheckpoint|setfinish|setitem|sethomingroom|finish|list|reload|give>
     permission: deathdrop.admin
 permissions:
   deathdrop.admin:
