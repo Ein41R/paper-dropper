@@ -1,7 +1,11 @@
 #deliberately chose to commit the world folder too.
 
+# Generated build output
+.gradle/
+bin/
+build/
 
 # dont commit logs
 logs/
 console_history.paper
-*.log   
+*.log
