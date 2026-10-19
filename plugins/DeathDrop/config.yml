@@ -1,0 +1,154 @@
+# DeathDrop map configuration.
+# Use /dd create <id> [display-name], then set locations in game.
+homing-room:
+  world: world
+  x: 241.48397979655124
+  y: 91.0
+  z: -24.51224283857095
+  yaw: -134.83691
+  pitch: -6.0634246
+maps:
+  sports:
+    display-name: Sports
+    checkpoint:
+      world: world
+      x: 116.48338558615502
+      y: 135.0625
+      z: -45.427659750287695
+      yaw: 1.704788
+      pitch: 3.3863611
+    finish:
+      location:
+        world: world
+        x: 116.66815943175432
+        y: -57.0
+        z: -39.69999998807907
+        yaw: 9.295288
+        pitch: 90.0
+      type: BOTH
+  aerostat:
+    display-name: Aerostat
+    checkpoint:
+      world: world
+      x: 191.5253347980321
+      y: 150.0
+      z: -29.40577120520223
+      yaw: -178.31665
+      pitch: -3.731691
+    finish:
+      location:
+        world: world
+        x: 186.40602148354398
+        y: -59.0
+        z: -37.4085757253267
+        yaw: 47.466537
+        pitch: 84.204025
+      type: BOTH
+  darts:
+    display-name: Darts
+    checkpoint:
+      world: world
+      x: 353.5739345618404
+      y: 187.0
+      z: 5.509244418978078
+      yaw: -90.171875
+      pitch: 1.3695791
+    finish:
+      location:
+        world: world
+        x: 353.4813304197422
+        y: 19.0
+        z: 5.392804622807435
+        yaw: 6.3314734
+        pitch: 90.0
+      type: BOTH
+  library:
+    display-name: Library
+    checkpoint:
+      world: world
+      x: 241.09912461418233
+      y: 81.0
+      z: -31.489060672735906
+      yaw: -89.38
+      pitch: 3.8892186
+    finish:
+      location:
+        world: world
+        x: 248.5785679340378
+        y: -59.0
+        z: -31.562379060618817
+        yaw: 44.28846
+        pitch: 89.905495
+      type: BOTH
+  tetris:
+    display-name: Tetris
+    checkpoint:
+      world: world
+      x: 438.3557595524966
+      y: 184.0
+      z: -16.987832276838866
+      yaw: -90.30615
+      pitch: -0.48758924
+    finish:
+      location:
+        world: world
+        x: 434.3234132377813
+        y: -60.0
+        z: -15.571151002248161
+        yaw: -66.143555
+        pitch: -89.24289
+      type: BOTH
+  school:
+    display-name: School
+    checkpoint:
+      world: world
+      x: 497.11376525599377
+      y: 192.0
+      z: -15.509699109852816
+      yaw: -90.17377
+      pitch: 0.6136865
+    finish:
+      location:
+        world: world
+        x: 503.4525343279709
+        y: -50.0
+        z: -12.481195861316518
+        yaw: -154.23285
+        pitch: 88.36222
+      type: BOTH
+  slime:
+    display-name: Slime
+    checkpoint:
+      world: world
+      x: 556.0500000119209
+      y: 186.0
+      z: -4.050000011920929
+      yaw: -137.7004
+      pitch: 10.850863
+    finish:
+      location:
+        world: world
+        x: 561.5266023071326
+        y: -52.0
+        z: -9.580613940549684
+        yaw: 9.04364
+        pitch: 85.59096
+      type: BOTH
+  slime2:
+    display-name: Slime2
+    checkpoint:
+      world: world
+      x: 556.0500000119209
+      y: 186.0
+      z: 51.05000001192093
+      yaw: -46.299137
+      pitch: 8.768849
+    finish:
+      location:
+        world: world
+        x: 561.6216673673235
+        y: -52.0
+        z: 56.45510810670889
+        yaw: 176.2848
+        pitch: 89.275635
+      type: BOTH
