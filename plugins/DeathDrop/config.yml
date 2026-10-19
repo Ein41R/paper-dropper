@@ -10,6 +10,7 @@ homing-room:
 maps:
   sports:
     display-name: Sports
+    item-material: DIAMOND
     checkpoint:
       world: world
       x: 116.48338558615502
@@ -28,6 +29,7 @@ maps:
       type: BOTH
   aerostat:
     display-name: Aerostat
+    item-material: FEATHER
     checkpoint:
       world: world
       x: 191.5253347980321

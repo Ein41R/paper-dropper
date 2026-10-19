@@ -14,9 +14,21 @@ items:
 # Examples: PAPER, DIAMOND, NETHER_STAR, FEATHER, FIREWORK_STAR
 menu:
   sports:
-    item-material: RED_WOOL
-  aerostat:
-    item-material: BLUE_WOOL
+    item-material: BLACK_GLAZED_TERRACOTTA
+  slime:
+    item-material: BROWN_GLAZED_TERRACOTTA
+  Aerostat:
+    item-material: ORANGE_GLAZED_TERRACOTTA
+  Library:
+    item-material: YELLOW_GLAZED_TERRACOTTA
+  School:
+    item-material: LIME_GLAZED_TERRACOTTA
+  Tetris:
+    item-material: GREEN_GLAZED_TERRACOTTA
+  Slime2:
+    item-material: CYAN_GLAZED_TERRACOTTA
+  Darts:
+    item-material: LIGHT_BLUE_GLAZED_TERRACOTTA
   item-material: PAPER
   item-name: "&6&l%map%"
   item-lore: "&7Click to enter this map."
