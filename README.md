@@ -10,54 +10,35 @@ The plugin targets Paper/Minecraft 26.3 and Java 25. Build it from the server ro
 ### Prerequisites
 
 - Java 25 JDK, including `javac`.
-- Gradle 9.x or another Gradle release that supports Java 25.
-- Internet access the first time you build, so Gradle can resolve the Paper API dependency.
+- The bundled Paper API libraries under `libraries/`.
 
-This repository does not include a Gradle wrapper. Check the tools before building:
-
-```sh
-java -version
-gradle --version
-```
-
-On Debian or Ubuntu, install the JDK with:
+Build through the included Gradle-style wrapper:
 
 ```sh
-sudo apt update
-sudo apt install openjdk-25-jdk
+./gradlew build
 ```
 
-Install Gradle using your preferred system package manager or the official Gradle installation instructions. Confirm that `gradle --version` reports a Java 25-compatible Gradle version.
+The wrapper uses the local Java 25 compiler and bundled libraries, so a separate
+Gradle installation is not required. `./gradlew clean` removes generated class
+and build output.
 
 ### Compile the plugin
 
-From `/home/SIBYL/Dev/server` (or the directory where this repository is checked out), run:
+From the server root, run:
 
 ```sh
-gradle clean build
+./gradlew build
 ```
 
-The build compiles `src/main/java`, copies `src/main/resources`, and runs the verification tasks. A successful build ends with `BUILD SUCCESSFUL` and creates a JAR under `build/libs/`. The filename normally includes the project directory and version, for example:
+The build compiles `src/main/java`, copies `src/main/resources`, and creates the
+runtime plugin directly at `plugins/DeathDrop.jar`.
 
-```text
-build/libs/server-1.0.0.jar
-```
-
-Use the actual filename shown by this command if the directory or version has changed:
-
-```sh
-ls -lh build/libs/*.jar
-```
-
-### Install the built JAR
+### Restart with the built JAR
 
 Stop the Paper server before replacing the plugin JAR. Then copy the newly built artifact into `plugins/` and give it the stable filename used by this server:
 
 ```sh
-cp build/libs/*.jar plugins/DeathDrop.jar
-```
-
-If more than one JAR exists in `build/libs/`, replace the wildcard with the exact artifact filename. Do not copy the `-plain.jar` artifact if Gradle creates one; use the regular JAR.
+The JAR is already in the correct location after `./gradlew build`.
 
 Start the server from the server root:
 
@@ -82,9 +63,8 @@ Confirm that the console reports `DeathDrop` enabled. The plugin configuration i
 After changing source code, stop the server, rebuild, replace the JAR, and start the server again:
 
 ```sh
-gradle clean build
-artifact="$(find build/libs -maxdepth 1 -type f -name '*.jar' ! -name '*-plain.jar' -print -quit)"
-cp "$artifact" plugins/DeathDrop.jar
+./gradlew clean
+./gradlew build
 ./run.sh
 ```
 
