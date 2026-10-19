@@ -5,22 +5,22 @@ maps: {}
 
 # Custom item styling. Use Minecraft color codes such as &b or &l.
 items:
-	selector-name: "&b&lMap Selector"
-	selector-lore: "&7Right-click to choose a map."
-	compass-name: "&a&lCheckpoint Compass"
-	compass-lore: "&7Right-click to return to your last checkpoint."
+  selector-name: "&b&lMap Selector"
+  selector-lore: "&7Right-click to choose a map."
+  compass-name: "&a&lCheckpoint Compass"
+  compass-lore: "&7Right-click to return to your last checkpoint."
 
 # The item shown for each map in the selector GUI.
 # Examples: PAPER, DIAMOND, NETHER_STAR, FEATHER, FIREWORK_STAR
 menu:
-	item-material: PAPER
-	item-name: "&6&l%map%"
-	item-lore: "&7Click to enter this map."
+  item-material: PAPER
+  item-name: "&6&l%map%"
+  item-lore: "&7Click to enter this map."
 
 # Completion presentation. The teleport delay is measured in seconds.
 completion:
-	teleport-delay-seconds: 3
-	finish-title: "&6&lMAP COMPLETE!"
-	finish-subtitle: "&e%map%"
-	homing-title: "&b&lHOMING ROOM"
-	homing-subtitle: "&7Welcome back"
+  teleport-delay-seconds: 3
+  finish-title: "&6&lMAP COMPLETE!"
+  finish-subtitle: "&e%map%"
+  homing-title: "&b&lHOMING ROOM"
+  homing-subtitle: "&7Welcome back"

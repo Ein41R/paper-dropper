@@ -3,3 +3,5 @@
 
 # dont commit logs
 logs/
+console_history.paper
+*.log   
