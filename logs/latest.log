@@ -1,121 +1,42 @@
-[18:13:28] [ServerMain/INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.4.1+1-1-24.04.4-Ubuntu; Ubuntu null) on Linux 7.0.0-38-generic (amd64)
-[18:13:28] [ServerMain/INFO]: [bootstrap] Loading Paper 26.3-205-main@a90108f (2026-10-17T20:50:27Z) for Minecraft 26.3
-[18:13:28] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
-[18:13:29] [ServerMain/INFO]: [PluginInitializerManager] Initialized 1 plugin
-[18:13:29] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+[21:05:13] [ServerMain/INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.4.1+1-1-24.04.4-Ubuntu; Ubuntu null) on Linux 7.0.0-38-generic (amd64)
+[21:05:13] [ServerMain/INFO]: [bootstrap] Loading Paper 26.3-205-main@a90108f (2026-10-17T20:50:27Z) for Minecraft 26.3
+[21:05:13] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[21:05:13] [ServerMain/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[21:05:13] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (1):
  - DeathDrop (1.0.0)
-[18:13:31] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
-[18:13:31] [ServerMain/INFO]: [com.destroystokyo.paper.profile.PaperServicesDiscoveryService] Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
-[18:13:31] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 320.1ms
-[18:13:33] [Worker-Main-1/INFO]: Loaded 1866 advancements
-[18:13:33] [Server thread/INFO]: Starting minecraft server version 26.3
-[18:13:33] [Server thread/INFO]: Loading properties
-[18:13:33] [Server thread/INFO]: This server is running Paper version 26.3-205-main@a90108f (2026-10-17T20:50:27Z) (Implementing API version 26.3.build.205-stable)
-[18:13:33] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
-[18:13:33] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[18:13:33] [Server thread/INFO]: Using 4 threads for Netty based IO
-[18:13:33] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
-[18:13:33] [Server thread/INFO]: Default game type: SURVIVAL
-[18:13:33] [Server thread/INFO]: Generating keypair
-[18:13:33] [Server thread/INFO]: Starting Minecraft server on *:25565
-[18:13:33] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[18:13:33] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
-[18:13:33] [Server thread/INFO]: [DeathDrop] Loading server plugin DeathDrop v1.0.0
-[18:13:33] [Server thread/INFO]: Preparing level "world"
-[18:13:34] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:overworld'...
-[18:13:34] [Server thread/INFO]: Prepared spawn area in 1 ms
-[18:13:34] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_nether'...
-[18:13:34] [Server thread/INFO]: Prepared spawn area in 0 ms
-[18:13:34] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_end'...
-[18:13:34] [Server thread/INFO]: Prepared spawn area in 0 ms
-[18:13:34] [Server thread/INFO]: Done preparing level "world" (0.192s)
-[18:13:34] [Server thread/INFO]: [DeathDrop] Enabling DeathDrop v1.0.0
-[18:13:34] [Server thread/ERROR]: Cannot load configuration from stream
-org.bukkit.configuration.InvalidConfigurationException: while scanning for the next token
-found character '\t(TAB)' that cannot start any token. (Do not use \t(TAB) for indentation)
- in 'reader', line 8, column 1:
-    	selector-name: "&b&lMap Selector"
-    ^
-
-	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:112) ~[paper-api-26.3.build.205-stable.jar:?]
-	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:160) ~[paper-api-26.3.build.205-stable.jar:?]
-	at org.bukkit.configuration.file.YamlConfiguration.loadConfiguration(YamlConfiguration.java:339) ~[paper-api-26.3.build.205-stable.jar:?]
-	at org.bukkit.plugin.java.JavaPlugin.reloadConfig(JavaPlugin.java:180) ~[paper-api-26.3.build.205-stable.jar:?]
-	at org.bukkit.plugin.java.JavaPlugin.getConfig(JavaPlugin.java:150) ~[paper-api-26.3.build.205-stable.jar:?]
-	at DeathDrop.jar//com.sibyl.deathdrop.DeathDropPlugin.loadData(DeathDropPlugin.java:84) ~[?:?]
-	at DeathDrop.jar//com.sibyl.deathdrop.DeathDropPlugin.onEnable(DeathDropPlugin.java:70) ~[?:?]
-	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:280) ~[paper-api-26.3.build.205-stable.jar:?]
-	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:201) ~[paper-26.3.jar:26.3-205-a90108f]
-	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-26.3.jar:26.3-205-a90108f]
-	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:519) ~[paper-api-26.3.build.205-stable.jar:?]
-	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:614) ~[paper-26.3.jar:26.3-205-a90108f]
-	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:571) ~[paper-26.3.jar:26.3-205-a90108f]
-	at net.minecraft.server.MinecraftServer.initPostWorld(MinecraftServer.java:641) ~[paper-26.3.jar:26.3-205-a90108f]
-	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:343) ~[paper-26.3.jar:26.3-205-a90108f]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1248) ~[paper-26.3.jar:26.3-205-a90108f]
-	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:298) ~[paper-26.3.jar:26.3-205-a90108f]
-	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
-Caused by: while scanning for the next token
-found character '\t(TAB)' that cannot start any token. (Do not use \t(TAB) for indentation)
- in 'reader', line 8, column 1:
-    	selector-name: "&b&lMap Selector"
-    ^
-
-	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:445) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:238) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingValue.produce(ParserImpl.java:669) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:161) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:57) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:43) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:136) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:116) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeScalarNode(Composer.java:241) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:205) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeKeyNode(Composer.java:359) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:344) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:131) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:157) ~[snakeyaml-2.2.jar:?]
-	at org.yaml.snakeyaml.Yaml.compose(Yaml.java:575) ~[snakeyaml-2.2.jar:?]
-	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:105) ~[paper-api-26.3.build.205-stable.jar:?]
-	... 17 more
-[18:13:34] [Server thread/INFO]: [DeathDrop] DeathDrop enabled with 8 map(s).
-[18:13:34] [Server thread/INFO]: [spark] Starting background profiler...
-[18:13:34] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[18:13:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[18:13:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[18:13:36] [Server thread/INFO]: Running delayed init tasks
-[18:13:36] [Server thread/INFO]: Done (9.250s)! For help, type "help"
-[18:13:36] [Paper Async Task Handler Thread - 1/INFO]: *** Currently you are 1 build behind ***
-[18:13:36] [Paper Async Task Handler Thread - 1/INFO]: *** It is highly recommended to download the latest build from https://papermc.io/downloads/paper ***
-[18:15:08] [Server thread/INFO]: DeathDrop configuration reloaded.
-[18:21:25] [Server thread/INFO]: Stopping server
-[18:21:25] [Server thread/INFO]: [DeathDrop] Disabling DeathDrop v1.0.0
-[18:21:25] [Server thread/INFO]: Saving players
-[18:21:25] [Server thread/INFO]: Saving worlds
-[18:21:25] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[18:21:25] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:overworld'
-[18:21:25] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:overworld'
-[18:21:25] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'minecraft:overworld'
-[18:21:25] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'minecraft:overworld' in 0.00s
-[18:21:25] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:overworld'
-[18:21:25] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:overworld'
-[18:21:25] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[18:21:25] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:the_nether'
-[18:21:25] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:the_nether'
-[18:21:25] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'minecraft:the_nether'
-[18:21:25] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'minecraft:the_nether' in 0.00s
-[18:21:25] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:the_nether'
-[18:21:25] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:the_nether'
-[18:21:25] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[18:21:26] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'minecraft:the_end'
-[18:21:26] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'minecraft:the_end'
-[18:21:26] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'minecraft:the_end'
-[18:21:26] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'minecraft:the_end' in 0.00s
-[18:21:26] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'minecraft:the_end'
-[18:21:26] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'minecraft:the_end'
-[18:21:26] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
-[18:21:26] [Server thread/INFO]: All RegionFile I/O tasks to complete
-[18:21:26] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
-[18:21:26] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
+[21:05:16] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[21:05:16] [ServerMain/INFO]: [com.destroystokyo.paper.profile.PaperServicesDiscoveryService] Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[21:05:16] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 309.2ms
+[21:05:17] [Worker-Main-4/INFO]: Loaded 1866 advancements
+[21:05:17] [Server thread/INFO]: Starting minecraft server version 26.3
+[21:05:17] [Server thread/INFO]: Loading properties
+[21:05:17] [Server thread/INFO]: This server is running Paper version 26.3-205-main@a90108f (2026-10-17T20:50:27Z) (Implementing API version 26.3.build.205-stable)
+[21:05:17] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[21:05:17] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[21:05:17] [Server thread/INFO]: Using 4 threads for Netty based IO
+[21:05:17] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
+[21:05:17] [Server thread/INFO]: Default game type: SURVIVAL
+[21:05:17] [Server thread/INFO]: Generating keypair
+[21:05:17] [Server thread/INFO]: Starting Minecraft server on *:25565
+[21:05:17] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[21:05:17] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[21:05:18] [Server thread/INFO]: [DeathDrop] Loading server plugin DeathDrop v1.0.0
+[21:05:18] [Server thread/INFO]: Preparing level "world"
+[21:05:18] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:overworld'...
+[21:05:18] [Server thread/INFO]: Preparing spawn area: 100%
+[21:05:18] [Server thread/INFO]: Prepared spawn area in 1 ms
+[21:05:18] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_nether'...
+[21:05:18] [Server thread/INFO]: Prepared spawn area in 1 ms
+[21:05:18] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_end'...
+[21:05:18] [Server thread/INFO]: Prepared spawn area in 0 ms
+[21:05:18] [Server thread/INFO]: Done preparing level "world" (0.198s)
+[21:05:18] [Server thread/INFO]: [DeathDrop] Enabling DeathDrop v1.0.0
+[21:05:18] [Server thread/INFO]: [DeathDrop] DeathDrop enabled with 8 map(s).
+[21:05:18] [Server thread/INFO]: [spark] Starting background profiler...
+[21:05:18] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[21:05:18] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[21:05:19] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[21:05:19] [Server thread/INFO]: Running delayed init tasks
+[21:05:19] [Server thread/INFO]: Done (6.335s)! For help, type "help"
+[21:05:19] [Paper Async Task Handler Thread - 1/INFO]: *** Currently you are 1 build behind ***
+[21:05:19] [Paper Async Task Handler Thread - 1/INFO]: *** It is highly recommended to download the latest build from https://papermc.io/downloads/paper ***

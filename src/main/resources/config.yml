@@ -13,6 +13,10 @@ items:
 # The fallback item shown for maps without their own item-material.
 # Examples: PAPER, DIAMOND, NETHER_STAR, FEATHER, FIREWORK_STAR
 menu:
+  sports:
+    item-material: DIAMOND
+  Aerostat:
+    item-material: FEATHER
   item-material: PAPER
   item-name: "&6&l%map%"
   item-lore: "&7Click to enter this map."
